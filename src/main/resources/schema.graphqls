@@ -1,0 +1,12 @@
+type Game {
+  gameId: String!
+  name: String!
+}
+
+type Query {
+  gameById(gameId: String!): Game
+}
+
+schema {
+  query: Query
+}
