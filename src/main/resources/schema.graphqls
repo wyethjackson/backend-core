@@ -1,10 +1,40 @@
 type Game {
-  gameId: String!
-  name: String!
+  id: String!
+  code: String!
+  teams: [Team]
 }
 
+type Team {
+  id: String!
+  gameId: String!
+  name: String!
+  color: TeamColor!
+  points: String!
+}
+
+type TeamColor {
+  teamId: String!
+  color: String!
+}
+
+type Word {
+  id: String!
+  word: String!
+}
+
+type GameWord {
+  gameId: String!
+  teamId: String!
+  word: Word!
+}
+
+
+
 type Query {
-  gameById(gameId: String!): Game
+  gameById(id: String!): Game
+  gameByCode(code: String!): Game
+  teamsByGameId(gameId: String!): [Team]
+  wordsByGameId(gameId: String!): [GameWord]
 }
 
 schema {

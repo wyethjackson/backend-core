@@ -1,4 +1,4 @@
-package com.wyjackprojects.wyjackgames;
+package com.wyjackprojects.backendCore;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

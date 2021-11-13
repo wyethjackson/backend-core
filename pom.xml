@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.wyjackprojects</groupId>
-	<artifactId>wyjackgames</artifactId>
+	<artifactId>backendCore</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>wyjackgames</name>
-	<description>Games</description>
+	<name>backend-core</name>
+	<description>Backend</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -38,10 +38,41 @@
 			<artifactId>graphql-java-tools</artifactId>
 			<version>5.2.4</version>
 		</dependency>
-				<dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>com.graphql-java</groupId>-->
+<!--			<artifactId>graphql-java-spring-webflux</artifactId>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>com.graphql-java</groupId>-->
+<!--			<artifactId>graphql-java-spring-boot-starter-webflux</artifactId>-->
+<!--		</dependency>-->
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+		<!-- https://mvnrepository.com/artifact/com.graphql-java/graphql-java-spring-webflux -->
+<dependency>
+    <groupId>com.graphql-java</groupId>
+    <artifactId>graphql-java-spring-webflux</artifactId>
+    <version>2021-03-29T16-31-33-ae4bd96</version>
+</dependency>
+
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>5.3.9</version>
+</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/com.graphql-java/graphql-java-spring-boot-starter-webmvc -->
+<dependency>
+    <groupId>com.graphql-java</groupId>
+    <artifactId>graphql-java-spring-boot-starter-webmvc</artifactId>
+    <version>2020-07-12T23-24-35-c6606f6</version>
+</dependency>
+
 <!--		<dependency>-->
 <!--			<groupId>com.graphql-java</groupId>-->
 <!--			<artifactId>graphql-java-servlet</artifactId>-->
